@@ -8,7 +8,7 @@
     <title>Bukti Pembayaran Syahriah Santri</title>
 
     <!-- Favicon -->
-    <link rel="favicon icon" href="/assets/img/ponpes.ico" type="image/x-icon">  
+    <link rel="favicon icon" href="/assets/img/ponpes.ico" type="image/x-icon">
 
     <!-- Invoice styling -->
     <style>
@@ -131,8 +131,8 @@
                             </td>
 
                             <td>
-                                <h3><b>Pondok Pesantren</b><br>
-                                Jalan Raya Daendels, Kasembon, Madani (62000)</h3>
+                                <h3><b>Pondok Pesantren Al-Budur</b><br>
+                                    Jalan Raya Daendels, Kasembon, Madani (50000)</h3>
                             </td>
                         </tr>
                     </table>

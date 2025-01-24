@@ -27,7 +27,7 @@
             </div>
             <div class="pricing-padding">
                 <div class="pricing-price">
-                    <h3>Rp. {{ number_format($data->spp, 0, ',', '.') }}</h3>
+                    <h4>Rp. {{ number_format($data->spp, 0, ',', '.') }}</h4>
                     <p>/bulan</p>
                 </div>
             </div>
@@ -40,7 +40,7 @@
             </div>
             <div class="pricing-padding">
                 <div class="pricing-price">
-                    <h3>Rp. {{ number_format($data->construction, 0, ',', '.') }}</h3>
+                    <h4>Rp. {{ number_format($data->construction, 0, ',', '.') }}</h4>
                     <p>/pendaftar baru</p>
                 </div>
             </div>
@@ -53,7 +53,7 @@
             </div>
             <div class="pricing-padding">
                 <div class="pricing-price">
-                    <h3>Rp. {{ number_format($data->facilities, 0, ',', '.') }}</h3>
+                    <h4>Rp. {{ number_format($data->facilities, 0, ',', '.') }}</h4>
                     <p>/pendaftar baru</p>
                 </div>
             </div>
@@ -66,7 +66,7 @@
             </div>
             <div class="pricing-padding">
                 <div class="pricing-price">
-                    <h3>Rp. {{ number_format($data->wardrobe, 0, ',', '.') }}</h3>
+                    <h4>Rp. {{ number_format($data->wardrobe, 0, ',', '.') }}</h4>
                     <p>/pendaftar baru</p>
                 </div>
             </div>
