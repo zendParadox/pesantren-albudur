@@ -18,18 +18,21 @@
                     <i class="fas fa-users"></i><span>Data Santri</span>
                 </a>
             </li>
+            @if (auth()->user()->role == 'Administrator')
             <li class="menu-header">User</li>
             <li class="{{ (request()->routeIs('pengguna*')) ? 'active' : '' }}">
                 <a href="{{ route('pengguna.index') }}" class="nav-link">
                     <i class="fas fa-user-cog"></i><span>Data Pengguna</span>
                 </a>
             </li>
+            @endif
             <li class="menu-header">Keuangan</li>
             <li class="{{ (request()->routeIs('biaya*')) ? 'active' : '' }}">
                 <a href="{{ route('biaya.index') }}" class="nav-link">
                     <i class="far fa-file-alt"></i><span>Biaya Pembayaran</span>
                 </a>
             </li>
+            @if (auth()->user()->role == 'Pengurus')
             <li class="dropdown {{ (request()->routeIs('syahriah*') || request()->routeIs('registration*')) ? 'active' : '' }}">
                 <a href="#" class="nav-link has-dropdown" data-toggle="dropdown"><i class="fas fa-file-invoice"></i> <span>Pembayaran</span></a>
                 <ul class="dropdown-menu">
@@ -41,6 +44,7 @@
                     </li>
                 </ul>
             </li>
+            @endif
             <li class="{{ (request()->routeIs('buku-kas*')) ? 'active' : '' }}">
                 <a href="{{ route('buku-kas.index') }}" class="nav-link">
                     <i class="fas fa-book-open"></i><span>Buku Kas</span>
