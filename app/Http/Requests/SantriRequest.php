@@ -8,7 +8,7 @@ use Illuminate\Foundation\Http\FormRequest;
 class SantriRequest extends FormRequest
 {
     public $validator = null;
-    
+
     /**
      * Determine if the user is authorized to make this request.
      *
@@ -41,7 +41,7 @@ class SantriRequest extends FormRequest
             'father_job'             => 'required|string',
             'mother_job'             => 'required|string',
             'parent_phone'           => 'required|string',
-            'entry_year'             => 'required|digits:4',
+            'entry_year'             => 'nullable|digits:4',
             'year_out'               => 'nullable|digits:4',
             'photo'                  => 'nullable|image|mimes:jpeg,png,jpg|max:2048'
         ];
